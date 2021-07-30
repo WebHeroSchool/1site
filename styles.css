@@ -4,7 +4,7 @@ body{
 }
 
 .wrapper{
-	width: 79%;
+	width: 80%;
 	margin: auto;
 }
 
@@ -17,7 +17,7 @@ body{
 .logo{
 	position: relative;
 	padding: 40px 0;
-	padding-left: 44px;
+	padding-left: 47px;
 	font: bold 24px/32px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
@@ -25,9 +25,9 @@ body{
 	width: 28px;
 	height: 28px;
 	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
+	left: 4px;
+	top: 48%;
+	transform: translateY(-48%);
 	border-radius: 50%;
 	opacity: .7;
 }
@@ -37,14 +37,14 @@ body{
 }
 
 .logo__circle_color_blue{
-	left: 8px;
-	top: 56%;
+	left: 12px;
+	top: 55%;
 	background: #C8DBFB;
 }
 
 .main__title{
-	margin-bottom: 40px;
-	padding-top: 70px;
+	margin-bottom: 34px;
+	padding-top: 76px;
 	font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
@@ -82,12 +82,12 @@ body{
 
 .menu{
 	display: flex;
-	align-items: center;
+	padding-top: 47px;
 }
 
 .menu__item{
 	position: relative;
-	margin-right: 26px;
+	margin-right: 27px;
 	font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
 	color: #000;
 	text-decoration: none;
@@ -121,7 +121,7 @@ body{
 }
 
 .menu__item:last-child{
-	margin-right: 0;
+	margin-right: 9px;
 }
 
 .menu__item:hover:after, .menu__item_active:after{
@@ -131,7 +131,7 @@ body{
 
 .button__navigation{
 	width: 32px;
-	padding: 40px 50%;
+	padding: 40px 49%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -150,4 +150,44 @@ body{
 
 .circle__color{
 	background: #C8DBFB;
+
+}
+
+@media (max-width: 736px){
+	.menu{
+		display: none;
+	}
+
+	.header{
+		margin-bottom: 28px;
+	}
+
+	.main{
+		padding: 74% 0 0;
+		background-size: 74%;
+		background-position: top center;
+		position: relative;
+		text-align: center;
+}
+
+	.main__title{
+		margin-top: 0;
+		margin-bottom: 44px;
+		padding-top: 20px;
+		font:bold 30px/39px 'pt_serifbold', arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle{
+		margin-bottom: 25px;
+		width: 275px;
+		font: 500 16px/18px 'Roboto', arial, helvetica, sans-serif;
+	}
+
+	.main__buttton{
+		font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+	}
+
+	.button__navigation{
+		display: none;
+	}
 }
