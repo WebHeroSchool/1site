@@ -79,7 +79,21 @@ body{
 }
 
 .main__button:hover{
-	opacity: .5;
+	animation: 1.5s ease-in-out 0s normal none infinite running trambling-animation;
+}
+
+@keyframes trambling-animation{
+	0%, 50%, 100%{
+		transform: rotate(0deg);
+	}
+
+	10%, 30%{
+		transform: rotate(-5deg);
+	}
+
+	20%, 40% {
+		transform: rotate(5deg);
+	}
 }
 
 .menu{
@@ -397,6 +411,10 @@ body{
 		font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
 		margin-bottom: 0;
 		margin-left: 2px;
+	}
+
+	.main__button:hover{
+		display: none;
 	}
 
 	.button__navigation{
